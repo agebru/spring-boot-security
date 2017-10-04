@@ -28,8 +28,10 @@ public class IkmTest {
 	 * 0; i < count; i++) { data[i] = i; } }
 	 */
 	public static void main(String[] args) {
+		System.out.println("\n Shows on how to initialize instance variables\n");
 		System.out.println("Count = " + count_instances);// System.out.println("Count
 															// = " + count);
+	
 
 		IkmTest test1 = new IkmTest();
 		// System.out.println("Executed after Block 2");
