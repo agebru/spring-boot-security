@@ -11,19 +11,18 @@ public class Main {
 		Stock stock1=new Stock("Laptop",4);
 		Stock stock2=new Stock("TV",1);
 		Stock stock3=new Stock("CellPhone",2);
+		Stock stock4=new Stock("CellPhone",3);
 		   stocks.add(stock1);
 		   stocks.add(stock2);
 		   stocks.add(stock3);
-		
-		
-		
+		    stocks.add(stock4);
 		
 		Portfolio p=new Portfolio();
 		  p.setStocks(stocks);
 		
 		Double value=p.getTotalValue();
 		
-		System.out.println("Grand Total Stock Price:"+value);
+		System.out.println("\nGrand Total Stock Price:"+value);
 
 	}
 

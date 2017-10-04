@@ -13,30 +13,28 @@ public class PortFolioTest {
 	private Portfolio portfolio;
 	private IStockMarket marketMock;
 
-	
 	@Before
 	public void setUp() {
 
-	portfolio = new Portfolio();
-	 portfolio.setName("my Portfolio");
+		portfolio = new Portfolio();
+		portfolio.setName("my Portfolio");
+		marketMock = EasyMock.createMock(IStockMarket.class);
 
-	marketMock = EasyMock.createMock(IStockMarket.class);
-	
-	//setting the implementation in the portifolio class with the mocked object
-	portfolio.setStockMarket(marketMock);
+		// setting the implementation in the portifolio class with the mocked
+		// object
+		portfolio.setStockMarket(marketMock);
 
 	}
 
 	@Test
- public void testGetTotalValue() {
+	public void testGetTotalValue() {
 
-	EasyMock.expect(marketMock.getPrice("EBAY")).andReturn(42.00);
-	EasyMock.replay(marketMock);
-	Stock ebayStock = new Stock("EBAY", 2);
+		EasyMock.expect(marketMock.getPrice("EBAY")).andReturn(42.00);
+		EasyMock.replay(marketMock);
+		Stock ebayStock = new Stock("EBAY", 2);
 
-	portfolio.addStock(ebayStock);
-
-	assertEquals(84.00, portfolio.getTotalValue(),0);
+		portfolio.addStock(ebayStock);
+		assertEquals(84.00, portfolio.getTotalValue(), 0);
 
 	}
 }
