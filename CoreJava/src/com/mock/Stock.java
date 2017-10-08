@@ -1,7 +1,6 @@
 package com.mock;
 
 public class Stock {
-
 	private String name;
 	private int quantity;
 
