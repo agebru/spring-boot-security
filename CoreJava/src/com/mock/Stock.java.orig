@@ -36,14 +36,21 @@ public class Stock {
 		this.quantity = quantity;
 
 	}
+<<<<<<< HEAD
+	//toString method in master
+=======
 	
 	
 	//adding toString method
+>>>>>>> c97fab07eb671fba87e64fad1ced273b31ad203c
 	@Override
 	public String toString() {
 		return "Stock [name=" + name + ", quantity=" + quantity + "]";
 	}
 	
+<<<<<<< HEAD
+=======
 	
+>>>>>>> c97fab07eb671fba87e64fad1ced273b31ad203c
 
 }

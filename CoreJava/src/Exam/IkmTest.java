@@ -17,10 +17,11 @@ public class IkmTest {
 	{
 		System.out.println("In Block 2");
 		mydata = new int[count_instances];
-		for (int i = 0; i < count_instances; i++) {
-			mydata[i] = i;
+		for (int k = 0; k < count_instances; k++) {
+			mydata[k] = k;
 			// System.out.print(data[i]+",");
 		}
+		
 	}
 
 	/*
