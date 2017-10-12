@@ -36,6 +36,9 @@ public class Stock {
 		this.quantity = quantity;
 
 	}
+	
+	
+	//adding toString method
 	@Override
 	public String toString() {
 		return "Stock [name=" + name + ", quantity=" + quantity + "]";
