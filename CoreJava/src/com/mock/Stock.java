@@ -36,5 +36,11 @@ public class Stock {
 		this.quantity = quantity;
 
 	}
+	@Override
+	public String toString() {
+		return "Stock [name=" + name + ", quantity=" + quantity + "]";
+	}
+	
+	
 
 }
