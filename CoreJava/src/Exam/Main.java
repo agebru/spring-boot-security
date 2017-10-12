@@ -1,5 +1,5 @@
 package Exam;
-
+// Main.java for mathematical calculations
 public class Main {
 
 	public static void main(String[] args) {
