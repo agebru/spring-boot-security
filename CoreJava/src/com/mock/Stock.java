@@ -44,6 +44,10 @@ public class Stock {
 		return "Stock [name=" + name + ", quantity=" + quantity + "]";
 	}
 	
+	public void display_stock_in_feature(){
+		String stk=toString();
+	}
+	
 	
 
 }
