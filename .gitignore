@@ -1,4 +1,6 @@
 *.xml
 testfile.txt
 */files/*.txt
+*.class
+*/target/
 
