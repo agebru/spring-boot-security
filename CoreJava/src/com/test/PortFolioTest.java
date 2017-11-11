@@ -18,7 +18,7 @@ public class PortFolioTest {
 
 		portfolio = new Portfolio();
 		portfolio.setName("my Portfolio");
-		marketMock = EasyMock.createMock(IStockMarket.class);
+		marketMock = EasyMock.createNiceMock(IStockMarket.class);
 
 		// setting the implementation in the portifolio class with the mocked
 		// object
