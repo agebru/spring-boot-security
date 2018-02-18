@@ -32,6 +32,39 @@ public class ArrayDemo {
 			
 		}
 		
+		
+		System.out.println("\nAn array of Vehicles:");
+		Vehicle[] vehicles=new Vehicle[]{
+			new Vehicle("T001","Toyota"),
+			new Vehicle("C005","Corolla"),
+			new Vehicle("L008","Lamburgini")
+		};
+		
+		for(Vehicle v:vehicles){
+			System.out.println(v.getPlateNo()+" "+v.getModel());
+		}
+		
+		// List of an Array of Vehicles
+		System.out.println("\n List of Veicle Array");
+		List<Vehicle[]> vehicleList=new ArrayList<Vehicle[]>();
+				vehicleList.add(new Vehicle[]{new Vehicle("N","Nissan"),new Vehicle("T","Toyota")});
+				vehicleList.add(new Vehicle[]{new Vehicle("I","Isuzu"),new Vehicle("F","FSR")});
+				vehicleList.add(new Vehicle[]{new Vehicle("B","Public Bus")});
+				vehicleList.add(new Vehicle[]{new Vehicle("S","Students Bus"),new Vehicle("Tr","Truck")});
+				
+			//display each Array of the list
+				for(Vehicle[] vArray:vehicleList){
+					for(Vehicle v:vArray){
+						System.out.println(v.getPlateNo()+" ==> "+v.getModel());
+					}
+					System.out.println();
+				}
+		
+		
+		
+		
+		
+		
 	}
 
 }
