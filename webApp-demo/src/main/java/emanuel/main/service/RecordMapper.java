@@ -15,6 +15,7 @@ public void setMessage(String message) {
 	this.message = message;
 }
 
+
 private int numRecords;
 
 public RecordMapper(){

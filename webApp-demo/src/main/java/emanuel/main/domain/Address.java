@@ -10,6 +10,7 @@ public class Address {
 	public void setZipCode(int zipCode) {
 		this.zipCode = zipCode;
 	}
+	
 	public String getStreet() {
 		return street;
 	}

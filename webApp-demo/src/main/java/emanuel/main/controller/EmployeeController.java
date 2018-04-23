@@ -51,6 +51,7 @@ public class EmployeeController {
 		mapper.setRecords(Arrays.asList(EmployeeService.findOne(id)));
 		mapper.setNumRecords((Arrays.asList(EmployeeService.findOne(id)).size()));
 		return mapper;
+		
 	}
 	
 	

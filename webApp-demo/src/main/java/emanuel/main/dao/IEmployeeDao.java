@@ -12,4 +12,6 @@ public interface IEmployeeDao {
 	
 	void deleteEmployee(int empId);
 	void save(Employee employee);
+	
+	
 }
